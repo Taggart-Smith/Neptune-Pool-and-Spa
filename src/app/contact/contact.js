@@ -1,14 +1,14 @@
 import Image from "next/image";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-export default function Home() {
+export default function Contact() {
   return (
     <div className="">
       <Navbar />
       <div className="text-center">
-        <h1 className="text-4xl font-bold">Neptune Pool & Spa</h1>
-        <p className="text-lg">Your trusted pool cleaning service.</p>
+        <h1 className="text-4xl font-bold">Contact Us</h1>
+        <p className="text-lg">We would love to hear from you!</p>
       </div>
 
       <div className="flex flex-col items-center">
