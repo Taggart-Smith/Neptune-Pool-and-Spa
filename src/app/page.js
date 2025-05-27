@@ -1,25 +1,20 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
     <div className="">
       <Navbar />
-      <div className="text-center">
-        <h1 className="text-4xl font-bold">Neptune Pool & Spa</h1>
-        <p className="text-lg">Your trusted pool cleaning service.</p>
-      <h1 className="text-4xl font-bold">Contact Us</h1>
-      </div>
+      <Hero
+        title="Welcome to Neptune Pool & Spa"
+        subtitle="Your trusted pool cleaning service."
+        image="/images/swimming-pool-top-view.jpg"
+        cta={<button className="bg-blue-500 text-white px-4 py-2 rounded">Get Started</button>}
+      />
 
       <div className="flex flex-col items-center">
-        <Image
-          src="/images/swimming-pool-top-view.jpg"
-          alt="Pool"
-          width={500}
-          height={300}
-          className="rounded-lg shadow-lg"
-        />
         <h2 className="text-2xl font-semibold mt-4">Residential Pool Cleaning</h2>
         <p className="text-lg mt-2">
           The cost for a residential pool cleaning appointment is{" "}

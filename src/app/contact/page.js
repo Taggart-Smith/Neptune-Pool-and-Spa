@@ -6,8 +6,10 @@ export default function Contact() {
   return (
     <div className="">
       <Navbar />
+      
       <div className="text-center">
-        <h1 className="text-4xl font-bold">Contact Us</h1>
+        <h1 className="text-4xl font-bold">Contact Us
+        </h1>
         <p className="text-lg">We would love to hear from you!</p>
       </div>
 
