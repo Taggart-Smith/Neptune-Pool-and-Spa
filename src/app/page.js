@@ -14,12 +14,50 @@ export default function Home() {
         cta={<button className="bg-blue-500 text-white px-4 py-2 rounded">Get Started</button>}
       />
 
-      <div className="flex flex-col items-center">
-        <h2 className="text-2xl font-semibold mt-4">Residential Pool Cleaning</h2>
-        <p className="text-lg mt-2">
-          The cost for a residential pool cleaning appointment is{" "}
-          <strong>$25</strong>.
-        </p>
+      <div className="pricing flex flex-col items-center">
+        <h1 className="text-2xl font-semibold mt-4"><strong>Pricing</strong></h1>
+        <div className="flex flex-col sm:flex-row items-center justify-between max-w-6xl w-full px-4 py-8 gap-8">
+          <div className="left-side">
+            <Image
+              src="/images/poolside:sunset.jpg"
+              alt="Pool Cleaning"
+              width={500}
+              height={300}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="right-side">
+            <h3 className="text-xl font-semibold mt-4">Residential</h3>
+            <ul className="list-disc pl-5 mt-2">
+              <li>Basic Cleaning: $50 per visit</li>
+              <li>Standard Cleaning: $75 per visit</li>
+              <li>Premium Cleaning: $100 per visit</li>
+            </ul>
+            <p className="mt-4">Contact us for custom packages and discounts on long-term contracts.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-between max-w-6xl w-full px-4 py-8 gap-8">
+          <div className="left-side">
+            <h3 className="text-xl font-semibold mt-4">Commercial</h3>
+            <ul className="list-disc pl-5 mt-2">
+              <li>Basic Cleaning: $50 per visit</li>
+              <li>Standard Cleaning: $75 per visit</li>
+              <li>Premium Cleaning: $100 per visit</li>
+            </ul>
+            <p className="mt-4">Contact us for custom packages and discounts on long-term contracts.</p>
+          </div>
+          <div className="right-side">
+            <Image
+              src="/images/poolsidex:robot.jpg"
+              alt="Pool Cleaning"
+              width={500}
+              height={300}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+
       </div>
 
       <Footer />
