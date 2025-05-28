@@ -19,3 +19,29 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+/* styles/globals.css */
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+}
+
+
+.navbar{
+  background-color: #215563;
+}
+
+.link:hover {
+  color: #9DC4CE;
+}
+
+.hero{
+  height: 650px;
+}
+
+.pricing{
+  background-color: #E1D7CF;
+}
