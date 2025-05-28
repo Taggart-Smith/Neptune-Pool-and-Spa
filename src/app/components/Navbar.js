@@ -11,7 +11,7 @@ export default function Navbar() {
         <Link href="/" className="text-2xl font-bold text-slate-50">
           Neptune Pool & Spa
         </Link>
-        {/* Hamburger Icon */}
+        
         <button
           className="sm:hidden flex flex-col justify-center items-center w-8 h-8"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -21,7 +21,7 @@ export default function Navbar() {
           <span className={`block h-1 w-6 bg-white mb-1 rounded transition-all ${menuOpen ? "opacity-0" : ""}`}></span>
           <span className={`block h-1 w-6 bg-white rounded transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
         </button>
-        {/* Desktop Menu */}
+
         <ul className="hidden sm:flex gap-8 text-lg font-medium text-slate-50">
           <li>
             <Link href="/" className="link">Home</Link>
