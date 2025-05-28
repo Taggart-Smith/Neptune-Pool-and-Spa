@@ -24,16 +24,16 @@ export default function Navbar() {
 
         <ul className="hidden sm:flex gap-8 text-lg font-medium text-slate-50">
           <li>
-            <Link href="/" className="link">Home</Link>
+            <Link href="/" className="hover:text-orange-500">Home</Link>
           </li>
           <li>
-            <Link href="/pricing" className="link">Pricing</Link>
+            <Link href="/pricing" className="hover:text-orange-500">Pricing</Link>
           </li>
           <li>
-            <Link href="/contact" className="link">Contact</Link>
+            <Link href="/payment" className="hover:text-orange-500">Payment</Link>
           </li>
           <li>
-            <Link href="/payment" className="link">Payment</Link>
+            <Link href="/contact" className="bg-orange-500 rounded-xl px-6 py-2 transition-all duration-300 ease-in-out transform hover:bg-black">Contact Us</Link>
           </li>
         </ul>
       </div>
@@ -41,16 +41,16 @@ export default function Navbar() {
       {menuOpen && (
         <ul className="navbar sm:hidden flex flex-col gap-4 text-lg font-medium text-slate-50 px-6 py-4">
           <li>
-            <Link href="/" className="link" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link href="/" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
           <li>
-            <Link href="/pricing" className="link" onClick={() => setMenuOpen(false)}>Pricing</Link>
+            <Link href="/pricing" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>Pricing</Link>
           </li>
           <li>
-            <Link href="/contact" className="link" onClick={() => setMenuOpen(false)}>Contact</Link>
+            <Link href="/payment" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>Payment</Link>
           </li>
-          <li>
-            <Link href="/payment" className="link" onClick={() => setMenuOpen(false)}>Payment</Link>
+          <li className="bg-orange-500 rounded-xl p-2 text-white px-6 py-2 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-black shadow-md hover:shadow-lg">
+            <Link href="/contact" className="" onClick={() => setMenuOpen(false)}>Contact Us</Link>
           </li>
         </ul>
       )}
