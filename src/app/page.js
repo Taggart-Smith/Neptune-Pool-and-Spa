@@ -15,7 +15,7 @@ export default function Home() {
       />
 
       <div className="pricing flex flex-col items-center">
-        <h1 className="text-2xl font-semibold mt-4"><strong>Pricing</strong></h1>
+        <h1 className="text-2xl font-semibold mt-4">Pricing</h1>
         <div className="flex flex-col sm:flex-row items-center justify-between max-w-6xl w-full px-4 py-8 gap-8">
           <div className="left-side">
             <Image
