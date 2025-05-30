@@ -11,7 +11,7 @@ export default function Home() {
         title="Welcome to Neptune Pool & Spa"
         subtitle="Your trusted pool cleaning service."
         image="/images/swimming-pool-top-view.jpg"
-        cta={<button className="bg-blue-500 text-white px-4 py-2 rounded">Get Started</button>}
+        cta={<button className="bg-orange-500 hover:bg-black text-white px-4 py-2 rounded">Get Started</button>}
       />
 
       <div className="pricing flex flex-col items-center">
