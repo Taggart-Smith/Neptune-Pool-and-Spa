@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import Certifications from "./components/Certifications";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         image="/images/swimming-pool-top-view.jpg"
         cta={<button className="bg-orange-500 hover:bg-black text-white px-4 py-2 rounded">Get Started</button>}
       />
+      <Certifications />
 
       <div className="pricing flex flex-col items-center">
         <h1 className="text-2xl font-semibold mt-4">Pricing</h1>
