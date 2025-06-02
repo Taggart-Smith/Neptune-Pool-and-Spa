@@ -56,7 +56,7 @@ const Certifications = () => {
   const translateX = -(current * (100 / extended.length));
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto px-4">
+    <div className="relative w-full max-w-6xl mx-auto px-4 pb-8">
       <h2 className="text-3xl font-bold mb-8 text-center">Our Certifications</h2>
       <div className="overflow-hidden">
         <div

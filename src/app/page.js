@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Certifications from "./components/Certifications";
-import Carousel from "./components/Carousel";
 
 export default function Home() {
   return (
