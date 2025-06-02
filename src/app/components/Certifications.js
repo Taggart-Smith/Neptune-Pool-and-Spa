@@ -1,6 +1,6 @@
-"use client";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+'use client';
+import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const certifications = [
   { name: "Certified Pool Operator", img: "/images/swimming-pool-top-view.jpg" },
@@ -8,98 +8,84 @@ const certifications = [
   { name: "Pool Robot", img: "/images/poolsidex:robot.jpg" },
   { name: "Another Certification", img: "/images/swimming-pool-top-view.jpg" },
   { name: "Yet Another", img: "/images/poolside:sunset.jpg" },
+  { name: "Yet Another", img: "/images/poolside:sunset.jpg" },
 ];
 
-export default function Certifications() {
-  const [visible, setVisible] = useState(4);
-  const [index, setIndex] = useState(0);
-  const [transitionEnabled, setTransitionEnabled] = useState(true);
-  const intervalRef = useRef(null);
-  const containerRef = useRef(null);
+const Certifications = () => {
+  const [cardsPerPage, setCardsPerPage] = useState(4);
+  const [current, setCurrent] = useState(0);
+  const [transition, setTransition] = useState(true);
+  const timeoutRef = useRef();
 
-  // Update visible items on resize
+  // Responsive cards per page
   useEffect(() => {
     const handleResize = () => {
-      setVisible(window.innerWidth < 640 ? 2 : 4);
+      setCardsPerPage(window.innerWidth < 768 ? 2 : 4);
     };
     handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Extended list for looping
-  const extended = [...certifications, ...certifications.slice(0, visible)];
+  // Duplicate cards for seamless looping
+  const extended = [...certifications, ...certifications.slice(0, cardsPerPage)];
 
-  // Move to next slide
-  const next = () => {
-    setIndex((prev) => prev + 1);
-  };
-
-  // Auto scroll
+  // Auto-advance one card at a time
   useEffect(() => {
-    intervalRef.current = setInterval(next, 4000);
-    return () => clearInterval(intervalRef.current);
-  }, []);
+    const interval = setInterval(() => {
+      setTransition(true);
+      setCurrent((prev) => prev + 1);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [cardsPerPage]);
 
-  // Pause on hover
+  // Handle seamless loop transition
   useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    const stop = () => clearInterval(intervalRef.current);
-    const start = () => (intervalRef.current = setInterval(next, 4000));
-
-    container.addEventListener("mouseenter", stop);
-    container.addEventListener("mouseleave", start);
-
-    return () => {
-      container.removeEventListener("mouseenter", stop);
-      container.removeEventListener("mouseleave", start);
-    };
-  }, []);
-
-  // Seamless loop
-  useEffect(() => {
-    if (index === certifications.length) {
-      setTimeout(() => {
-        setTransitionEnabled(false);
-        setIndex(0);
-      }, 500); // Match CSS transition duration
+    if (current === certifications.length) {
+      timeoutRef.current = setTimeout(() => {
+        setTransition(false);
+        setCurrent(0);
+      }, 500); // match transition duration
     } else {
-      setTransitionEnabled(true);
+      setTransition(true);
     }
-  }, [index]);
+    return () => clearTimeout(timeoutRef.current);
+  }, [current]);
 
-  const translatePercent = -(index * (100 / visible));
+  // Calculate translateX
+  const translateX = -(current * (100 / extended.length));
 
   return (
-    <div ref={containerRef} className="w-full max-w-6xl mx-auto py-12 overflow-hidden">
+    <div className="relative w-full max-w-6xl mx-auto px-4">
       <h2 className="text-3xl font-bold mb-8 text-center">Our Certifications</h2>
-      <div className="relative w-full overflow-hidden">
+      <div className="overflow-hidden">
         <div
-          className={`flex ${transitionEnabled ? "transition-transform duration-500 ease-in-out" : ""}`}
+          className="flex"
           style={{
-            width: `${(extended.length * 100) / visible}%`,
-            transform: `translateX(${translatePercent}%)`,
+            width: `${(extended.length * 100) / cardsPerPage}%`,
+            transform: `translateX(${translateX}%)`,
+            transition: transition ? "transform 0.5s cubic-bezier(0.4,0,0.2,1)" : "none",
           }}
         >
           {extended.map((cert, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 px-2 sm:px-4"
-              style={{ width: `${100 / extended.length}%` }}
+              className="bg-white rounded-xl shadow-md overflow-hidden flex-shrink-0 mx-3"
+              style={{
+                width: `calc(${100 / extended.length}% - 1.5rem)`, // 1.5rem = mx-3 left+right
+                flexBasis: `calc(${100 / extended.length}% - 1.5rem)`,
+              }}
             >
-              <div className="flex flex-col items-center bg-white rounded-lg shadow p-6">
-                <div className="relative w-48 h-32 mb-4">
-                  <Image
-                    src={cert.img}
-                    alt={cert.name}
-                    fill
-                    className="object-cover rounded"
-                    sizes="(max-width: 640px) 120px, 192px"
-                  />
-                </div>
-                <span className="text-base font-medium text-center">{cert.name}</span>
+              <Image
+                src={cert.img}
+                alt={cert.name}
+                width={800}
+                height={400}
+                sizes="(max-width: 768px) 100vw, 400px"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-center">{cert.name}</h3>
               </div>
             </div>
           ))}
@@ -107,4 +93,6 @@ export default function Certifications() {
       </div>
     </div>
   );
-}
+};
+
+export default Certifications;
