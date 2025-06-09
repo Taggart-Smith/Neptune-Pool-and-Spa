@@ -11,7 +11,7 @@ export default function Home() {
       <Hero
         title="Welcome to Neptune Pool & Spa"
         subtitle="Your trusted pool cleaning service."
-        image="/images/swimming-pool-top-view.jpg"
+        image="/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg"
         cta={<button className="bg-orange-500 hover:bg-black text-white px-4 py-2 rounded">Get Started</button>}
       />
       <Certifications />
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="right-side">
             <Image
-              src="/images/poolsidex:robot.jpg"
+              src="/Neptune-Pool-and-Spa/images/poolsidex:robot.jpg"
               alt="Pool Cleaning"
               width={500}
               height={300}
