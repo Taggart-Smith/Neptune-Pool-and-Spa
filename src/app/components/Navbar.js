@@ -29,9 +29,9 @@ export default function Navbar() {
           <li>
             <Link href="/pricing" className="hover:text-orange-500">Pricing</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/payment" className="hover:text-orange-500">Payment</Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/contact" className="bg-orange-500 rounded-xl px-6 py-2 transition-all duration-300 ease-in-out transform hover:bg-black">Contact Us</Link>
           </li>
