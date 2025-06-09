@@ -21,7 +21,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row items-center justify-between max-w-6xl w-full px-4 py-8 gap-8">
           <div className="left-side">
             <Image
-              src="/images/poolside-sunset.jpg"
+              src="/Neptune-Pool-and-Spa/images/poolside-sunset.jpg"
               alt="Pool Cleaning"
               width={500}
               height={300}
