@@ -5,10 +5,10 @@ import Image from 'next/image';
 const certifications = [
   { name: "Certified Pool Operator", img: "/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg" },
   { name: "Poolside Sunset", img: "/Neptune-Pool-and-Spa/images/poolside:sunset.jpg" },
-  { name: "Pool Robot", img: "/Neptune-Pool-and-Spa/images/poolsidex:robot.jpg" },
+  { name: "Pool Robot", img: "/Neptune-Pool-and-Spa/images/poolside-robot.jpg" },
   { name: "Another Certification", img: "/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg" },
-  { name: "Yet Another", img: "/Neptune-Pool-and-Spa/images/poolside:sunset.jpg" },
-  { name: "Yet Another", img: "/Neptune-Pool-and-Spa/images/poolside:sunset.jpg" },
+  { name: "Yet Another", img: "/Neptune-Pool-and-Spa/images/poolside-sunset.jpg" },
+  { name: "Yet Another", img: "/Neptune-Pool-and-Spa/images/poolside-sunset.jpg" },
 ];
 
 const Certifications = () => {
