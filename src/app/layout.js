@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Roboto } from 'next/font/google'
+import "./fontawesome"; // adjust path if needed
 
 const roboto = Roboto({
   subsets: ['latin'],
