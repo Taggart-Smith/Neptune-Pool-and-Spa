@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Certifications from "./components/Certifications";
 import Pricing from "./pricing/page";
 import PricingBar from "./components/PricingBar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
         title="Welcome to Neptune Pool & Spa"
         subtitle="Your trusted pool cleaning service."
         image="/images/swimming-pool-top-view.jpg"
-        cta={<button className="bg-orange-500 hover:bg-black text-white px-4 py-2 rounded">Get Started</button>}
+        cta={<Link href="/contact" className="bg-orange-500 hover:bg-black text-white px-4 py-2 rounded">Get a Quote</Link>}
       />
+
       <Certifications />
 
       <PricingBar />

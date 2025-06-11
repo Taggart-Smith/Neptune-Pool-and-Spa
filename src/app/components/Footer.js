@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Footer() {
   return (
@@ -16,18 +18,14 @@ export default function Footer() {
               href="tel:3855674648"
               className="hover:underline flex items-center gap-1"
             >
-              <span role="img" aria-label="Phone">
-                📞
-              </span>
+              <FontAwesomeIcon icon={faPhone} />
               (385) 567-4648
             </a>
             <a
               href="mailto:info@neptunepoolandspa.com"
               className="hover:underline flex items-center gap-1"
             >
-              <span role="img" aria-label="Email">
-                ✉️
-              </span>
+              <FontAwesomeIcon icon={faEnvelope} />
               info@neptunepoolandspa.com
             </a>
 
