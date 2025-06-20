@@ -43,9 +43,6 @@ export default function Navbar() {
           <li>
             <Link href="/pricing" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>Pricing</Link>
           </li>
-          <li>
-            <Link href="/payment" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>Payment</Link>
-          </li>
           <li className="bg-orange-500 rounded-xl p-2 text-white px-6 py-2 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-black shadow-md hover:shadow-lg">
             <Link href="/contact" className="" onClick={() => setMenuOpen(false)}>Contact Us</Link>
           </li>

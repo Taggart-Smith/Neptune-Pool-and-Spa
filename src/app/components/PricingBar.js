@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PricingBar = () => {
   return (
-    <div className="pricing flex flex-col items-center w-full bg-gradient-to-b from-white via-blue-50 to-white py-8">
+    <div className="pricing flex flex-col items-center w-full py-8">
       <h1 className="text-3xl font-bold mb-8 text-gray-800 drop-shadow-sm">Pricing</h1>
 
       {/* Residential */}
@@ -22,17 +22,17 @@ const PricingBar = () => {
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 text-center sm:text-left">Residential</h3>
           <ul className="mb-4 text-gray-700">
             <li className="mb-2">
-              <strong>Basic Cleaning:</strong> <span className="text-blue-700">$50 per visit</span>
+              <strong>Basic Cleaning:</strong> <span className="text-gray-900">$50 per visit</span>
             </li>
             <li className="mb-2">
-              <strong>Standard Cleaning:</strong> <span className="text-blue-700">$75 per visit</span>
+              <strong>Standard Cleaning:</strong> <span className="text-gray-900">$75 per visit</span>
             </li>
             <li className="mb-2">
-              <strong>Premium Cleaning:</strong> <span className="text-blue-700">$100 per visit</span>
+              <strong>Premium Cleaning:</strong> <span className="text-gray-900">$100 per visit</span>
             </li>
           </ul>
           <div className="mb-4">
-            <h4 className="font-semibold mb-1 text-blue-700">
+            <h4 className="font-semibold mb-1 text-gray-800">
               All Residential Services Include:
             </h4>
             <ul className="list-disc pl-5 text-gray-700">
@@ -44,7 +44,7 @@ const PricingBar = () => {
               <li>Equipment inspection</li>
             </ul>
           </div>
-          <p className="text-blue-600 text-sm">
+          <p className="text-gray-600 text-sm">
             Contact us for custom packages and discounts on long-term contracts.
           </p>
         </div>
@@ -66,17 +66,17 @@ const PricingBar = () => {
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 text-center sm:text-left">Commercial</h3>
           <ul className="mb-4 text-gray-700">
             <li className="mb-2">
-              <strong>Basic Cleaning:</strong> <span className="text-blue-700">$75 per visit</span>
+              <strong>Basic Cleaning:</strong> <span className="text-gray-900">$75 per visit</span>
             </li>
             <li className="mb-2">
-              <strong>Standard Cleaning:</strong> <span className="text-blue-700">$100 per visit</span>
+              <strong>Standard Cleaning:</strong> <span className="text-gray-900">$100 per visit</span>
             </li>
             <li className="mb-2">
-              <strong>Premium Cleaning:</strong> <span className="text-blue-700">$150 per visit</span>
+              <strong>Premium Cleaning:</strong> <span className="text-gray-900">$150 per visit</span>
             </li>
           </ul>
           <div className="mb-4">
-            <h4 className="font-semibold mb-1 text-blue-700">
+            <h4 className="font-semibold mb-1 text-gray-800">
               All Commercial Services Include:
             </h4>
             <ul className="list-disc pl-5 text-gray-700">
@@ -88,7 +88,7 @@ const PricingBar = () => {
               <li>Priority scheduling</li>
             </ul>
           </div>
-          <p className="text-blue-600 text-sm">
+          <p className="text-gray-600 text-sm">
             Contact us for custom commercial quotes and maintenance contracts.
           </p>
         </div>
