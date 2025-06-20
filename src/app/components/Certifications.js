@@ -3,12 +3,21 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const certifications = [
+<<<<<<< HEAD
   { name: "Certified Pool Operator", img: "/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg" },
   { name: "Poolside Sunset", img: "/Neptune-Pool-and-Spa/images/poolside-sunset.jpg" },
   { name: "Pool Robot", img: "/Neptune-Pool-and-Spa/images/poolsidex:robot.jpg" },
   { name: "Another Certification", img: "/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg" },
   { name: "Yet Another", img: "/Neptune-Pool-and-Spa/images/poolside-sunset.jpg" },
   { name: "Yet Another", img: "/Neptune-Pool-and-Spa/images/poolside-sunset.jpg" },
+=======
+  { name: "Certified Pool Operator", img: "/images/swimming-pool-top-view.jpg" },
+  { name: "Poolside Sunset", img: "/images/poolside-sunset.jpg" },
+  { name: "Pool Robot", img: "/images/poolsidex:robot.jpg" },
+  { name: "Another Certification", img: "/images/swimming-pool-top-view.jpg" },
+  { name: "Yet Another", img: "/images/poolside-sunset.jpg" },
+  { name: "Yet Another", img: "/images/poolside-sunset.jpg" },
+>>>>>>> dev
 ];
 
 const Certifications = () => {
@@ -56,7 +65,7 @@ const Certifications = () => {
   const translateX = -(current * (100 / extended.length));
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto px-4 pb-8">
+    <div className="relative w-full max-w-6xl mx-auto px-4 pb-8 p-4">
       <h2 className="text-3xl font-bold mb-8 text-center">Our Certifications</h2>
       <div className="overflow-hidden">
         <div

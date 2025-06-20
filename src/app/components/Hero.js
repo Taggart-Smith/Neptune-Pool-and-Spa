@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero({ title, subtitle, image, cta }) {
   return (
-    <section className="hero relative flex flex-col items-center justify-center text-center py-16 bg-blue-50 my-8">
+    <section className="hero relative flex flex-col items-center justify-center text-center bg-blue-50 mt-4">
       {image && (
         <div className="absolute inset-0 z-0">
           <Image
