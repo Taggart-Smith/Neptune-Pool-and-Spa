@@ -13,7 +13,7 @@ export default function Commercial() {
 
       <div className="flex flex-col items-center">
         <Image
-          src="/images/swimming-pool-top-view.jpg"
+          src="/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg"
           alt="Pool"
           width={500}
           height={300}

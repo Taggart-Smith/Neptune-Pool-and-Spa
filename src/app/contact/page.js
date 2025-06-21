@@ -23,7 +23,7 @@ export default function ContactUs() {
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2 space-y-6">
             <Image
-              src="/images/swimming-pool-top-view.jpg"
+              src="/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg"
               alt="Top view of a clear blue swimming pool"
               loading='lazy'
               width={600}

@@ -30,7 +30,7 @@ export default function Pricing() {
           {/* Residential Pricing */}
           <div className="md:w-1/2 space-y-6">
             <Image
-              src="/images/swimming-pool-top-view.jpg"
+              src="/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg"
               alt="Residential Pool"
               width={600}
               height={350}
@@ -86,7 +86,7 @@ export default function Pricing() {
           {/* Commercial Pricing */}
           <div className="md:w-1/2 space-y-6">
             <Image
-              src="/images/poolsidex:robot.jpg"
+              src="/Neptune-Pool-and-Spa/images/poolsidex:robot.jpg"
               alt="Commercial Pool"
               width={600}
               height={350}

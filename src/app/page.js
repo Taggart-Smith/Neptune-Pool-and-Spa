@@ -29,7 +29,7 @@ export default function Home() {
         <Hero
           title="Welcome to Neptune Pool & Spa"
           subtitle="Your trusted pool cleaning service."
-          image="/images/swimming-pool-top-view.jpg"
+          image="/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg"
           cta={
             <Link
               href="/contact"

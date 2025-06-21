@@ -10,7 +10,7 @@ const PricingBar = () => {
       <div className="flex flex-col sm:flex-row items-center justify-between max-w-5xl w-full px-4 py-8 gap-8">
         <div className="left-side w-full sm:w-1/2">
           <Image
-            src="/images/swimming-pool-top-view.jpg"
+            src="/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg"
             alt="Residential Pool"
             width={500}
             height={300}
@@ -54,7 +54,7 @@ const PricingBar = () => {
       <div className="flex flex-col sm:flex-row-reverse items-center justify-between max-w-5xl w-full px-4 py-8 gap-8">
         <div className="right-side w-full sm:w-1/2">
           <Image
-            src="/images/poolsidex:robot.jpg"
+            src="/Neptune-Pool-and-Spa/images/poolsidex:robot.jpg"
             alt="Commercial Pool"
             width={500}
             height={300}

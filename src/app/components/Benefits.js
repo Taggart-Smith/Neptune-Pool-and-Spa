@@ -9,28 +9,28 @@ export default function Benefits() {
       {/* Images grid */}
       <div className="grid grid-cols-2 gap-4">
         <Image
-          src="/images/pool-cleaning.jpg"
+          src="/Neptune-Pool-and-Spa/images/pool-cleaning.jpg"
           alt="Pool cleaning"
           width={180}
           height={120}
           className="rounded-lg shadow"
         />
         <Image
-          src="/images/pool-cleaning.jpg"
+          src="/Neptune-Pool-and-Spa/images/pool-cleaning.jpg"
           alt="Filter cleaning"
           width={180}
           height={120}
           className="rounded-lg shadow"
         />
         <Image
-          src="/images/pool-cleaning.jpg"
+          src="/Neptune-Pool-and-Spa/images/pool-cleaning.jpg"
           alt="Pool after cleaning"
           width={180}
           height={120}
           className="rounded-lg shadow"
         />
         <Image
-          src="/images/pool-cleaning.jpg"
+          src="/Neptune-Pool-and-Spa/images/pool-cleaning.jpg"
           alt="Pool cleaning in progress"
           width={180}
           height={120}

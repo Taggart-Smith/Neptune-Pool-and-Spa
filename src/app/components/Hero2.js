@@ -24,7 +24,7 @@ export default function Hero2() {
         </Link>
         {/* Optional: Google reviews or trust badges */}
         <div className="flex items-center gap-2 mt-4">
-          <Image src="/images/google-reviews.png" alt="Google reviews" width={80} height={20} />
+          <Image src="/Neptune-Pool-and-Spa/images/google-reviews.png" alt="Google reviews" width={80} height={20} />
           <span className="text-sm text-gray-500">4.7 ★★★★★</span>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function Hero2() {
       <div className="flex-1 flex justify-center relative">
         <div className="relative">
           <Image
-            src="/images/swimming-pool-top-view.jpg"
+            src="/Neptune-Pool-and-Spa/images/swimming-pool-top-view.jpg"
             alt="Family enjoying pool"
             width={400}
             height={350}
